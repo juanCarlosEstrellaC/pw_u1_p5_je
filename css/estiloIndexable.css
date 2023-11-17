@@ -1,11 +1,11 @@
 .menu li{
     list-style: none;
     display: inline-block;
-    font: bold 14px verdana;
-    border: solid;
+    font: bold 19px verdana;
+    border: dashed;
     padding: 10px;
-    margin: 100px;
-    margin-top: 50px;
+    margin: 30px;
+    margin: 50px;
 }
 
 .cabecera h1,h6{
@@ -13,7 +13,7 @@
 }
 
 .menu{
-    background-color: #ce80f0;
+    background-color: #bfaa82;
     text-align: left;
 }
 
@@ -32,5 +32,64 @@ body{
     border: 1px solid black;
     background-color: white;
     width: 900px;
-    margin: 15px auto;
+    margin: 20px auto;
 }
+
+.cabecera{
+    background-color: rgb(12, 176, 61);
+    border: 10px double black;
+    padding: 25px;
+}
+
+.seccion{
+    float: left;
+    width: 600px;
+    margin: 10px;
+}
+
+article{
+    background-color: #fffccc;
+    border: 1px solid #999;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+time{
+    color: #999;
+
+}
+
+article footer{
+    text-align: right;
+}
+
+
+#idReferencia{
+    width: 250px;
+    float: right;
+    margin: 10px 0px;
+    margin-right: 0px;
+    border: 10px solid #999;
+    margin-right: 10px;
+}
+
+.pie{
+    clear: both;
+}
+
+
+#idReferencia blockquote{
+    border: 5px dashed black;
+    background-color: #b6eeee;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+img{
+    height: 400px;
+    width: 400px;
+    margin: 20px auto;
+}
+
