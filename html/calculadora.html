@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        function sumarNumeros(primero, segundo){
+            var n1 = parseInt(primero)
+            var n2 = parseInt(segundo)
+
+            console.log('Funcion sumar números'+n1)
+            console.log('Funcion sumar números'+n2)
+            var resultado = n1 + n2;
+            console.log(resultado)
+            document.getElementById('idResultado2').innerText = resultado;
+            return resultado;
+        }
+
+        function restarNumeros(primero, segundo){
+            return primero - segundo;
+        }
+
+        function sumarNumerosCompleto(){
+            var n1 = parseInt(document.getElementById('idNumero1').value);
+            var n2 = parseInt(document.getElementById('idNumero2').value);
+
+            console.log('Funcion sumar números'+n1)
+            console.log('Funcion sumar números'+n2)
+            var resultado = n1 + n2;
+            console.log(resultado)
+            document.getElementById('idResultado2').innerText = resultado;
+            return resultado;
+        }
+
+    </script>
+
+
 </head>
 <body>
     <header>
@@ -34,6 +67,10 @@
         </div>
 
 
+        <h2>JS INTERNO</h2>
+        <button onclick="sumarNumeros(document.getElementById('idNumero1').value, document.getElementById('idNumero2').value)">SUMAR INTERNO INCOMPLETO</button>
+        <button onclick="sumarNumerosCompleto()">SUMAR INTERNO COMPLETO</button>
+        <label id="idResultado2" for=""></label>
 
         <img src="https://fotos.perfil.com/2023/04/18/trim/1140/641/dia-mundial-de-la-tierra-1549381.jpg"
         alt="No se pudo cargar la imagen." id="idMiImagen">

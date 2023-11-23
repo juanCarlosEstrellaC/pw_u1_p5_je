@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../js/calculadoraFunciones.js">
+
+    </script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Mi Calculadora</h1>
+    </header>
+
+    <nav> 
+
+    </nav>
+
+    <section>
+        <label for="idNumero1">Número 1:</label>
+        <input type="number" id="idNumero1">
+        <label for="idNumero2">Número 2:</label>
+        <input type="number" id="idNumero2">
+
+
+
+        <button onclick="document.getElementById('idDiv').innerHTML='<button>Hola</button>'">Agregar Elemento</button>
+        <label id="idResultado" for=""></label>
+
+        <div id="idDiv">
+            <!--<button>Hola</button>-->
+        </div>
+
+
+        <h2>JS EXTERNO</h2>
+        <button onclick="sumarNumerosCompleto()">SUMAR EXTERNO COMPLETO</button>
+        <button onclick="restarNumeros()">RESTAR EXTERNO COMPLETO</button>
+        <button onclick="multiplicarNumeros()">MULT EXTERNO COMPLETO</button>
+        <button onclick="dividirNumeros()">DIV EXTERNO COMPLETO</button>
+        <button onclick="cambiarImg()">CAMBIAR IMG COMPLETO</button>
+
+        <label id="idResultado2" for=""></label>
+
+        <img src="https://fotos.perfil.com/2023/04/18/trim/1140/641/dia-mundial-de-la-tierra-1549381.jpg"
+        alt="No se pudo cargar la imagen." id="idMiImagen">
+
+        <button onclick="cambiarImg()">CAMBIAR IMAGEN</button>
+
+
+
+
+    </section>
+
+    <footer>Todos los derechos Reservados </footer>
+</body>
+</html>
