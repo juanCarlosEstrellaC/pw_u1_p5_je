@@ -1,28 +1,31 @@
+const resutlDom = document.getElementById('idResultado2')
+
 // const = constante
 const sumar = (n1, n2) => n1 + n2;
+
 
 const sumarCompleto = () => {
     var resultado = parsear('idNumero1') + parsear('idNumero2')
     console.log(resultado)
-    document.getElementById('idResultado2').innerText = resultado;
+    resutlDom.innerText = resultado;
 }
 
 const restarCompleto = () => {
     var resultado = parsear('idNumero1') - parsear('idNumero2')
     console.log(resultado)
-    document.getElementById('idResultado2').innerText = resultado;
+    resutlDom.innerText = resultado;
 }
 
 const multiplicarCompleto = () => {
     var resultado = parsear('idNumero1') * parsear('idNumero2')
     console.log(resultado)
-    document.getElementById('idResultado2').innerText = resultado;
+    resutlDom.innerText = resultado;
 }
 
 const dividirCompleto = () => {
     var resultado = parsear('idNumero1') / parsear('idNumero2')
     console.log(resultado)
-    document.getElementById('idResultado2').innerText = resultado;
+    resutlDom.innerText = resultado;
 }
 
 const cambiarImg = () => {
