@@ -18,3 +18,8 @@ function resetear() {
     res = 0;
     document.getElementById("idResetear").innerText = cadenaOp
 }
+
+function borrar(){
+    cadenaOp = cadenaOp.slice(0,-1)
+    document.getElementById("idResetear").innerText = cadenaOp
+}
