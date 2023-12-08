@@ -6,7 +6,7 @@
 
 .calculadora {
     display: grid;
-    /*     grid-template-columns: 75px 75px 75px 75px;*/
+    grid-template-columns: 75px 75px 75px 75px;
     grid-template-columns: repeat(4, 75px);
     grid-template-rows: 150px repeat(5, 75px);
     background-color:#00916e;
@@ -32,6 +32,7 @@ button{
     border: none;
     background-color: #00916e;
     box-shadow: 5px 5px 10px 2px #00000040;
+    cursor: pointer;
 }
 
 button:hover{
