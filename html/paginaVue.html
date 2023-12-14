@@ -28,6 +28,26 @@
 
             <button v-on:click="cambiarMensaje()">Cambiar Mensaje</button>
             <button v-on:click="cambiarNumero()">Sumar</button>
+
+            <hr />
+            <p>{{lista}}</p>
+
+            <label for="idNombre">Nombre</label>
+            <input v-on:keypress="presionandoTecla" id="idNombre" type="text" v-model="nombre">
+            <label for="idApellido">Apellido</label>
+            <input v-on:keypress="metodoApellido" id="idApellido" type="text" v-model="apellido">
+            <button v-on:click="agregarEstudiante()">Agregar</button>
+            {{nombre}}
+            {{apellido}}
+
+
+            <ul>
+                <li v-for="({nombre, apellido}, index) in lista">{{index+1}}: {{nombre}} - {{apellido}} 
+                    <button>Editar</button></li>
+            </ul>
+
+
+
         </div>
         <script src="../js/app.js"></script>
 
