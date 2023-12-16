@@ -33,17 +33,19 @@
             <p>{{lista}}</p>
 
             <label for="idNombre">Nombre</label>
-            <input v-on:keypress="presionandoTecla" id="idNombre" type="text" v-model="nombre">
+            <input @keypress="presionandoTecla" id="idNombre" type="text" v-model="nombre">
             <label for="idApellido">Apellido</label>
-            <input v-on:keypress="metodoApellido" id="idApellido" type="text" v-model="apellido">
-            <button v-on:click="agregarEstudiante()">Agregar</button>
+            <input @keypress.enter="agregarEstudianteMod" id="idApellido" type="text" v-model="apellido">
+            <button @click="agregarEstudiante()">Agregar</button>
             {{nombre}}
             {{apellido}}
 
 
             <ul>
-                <li v-for="({nombre, apellido}, index) in lista">{{index+1}}: {{nombre}} - {{apellido}} 
-                    <button>Editar</button></li>
+                <li v-for="({nombre, apellido}, index) in lista">
+                    <p v-if="nombre!== '' ">{{index+1}}: {{nombre}} - {{apellido}}</p>
+                    <button v-if="nombre!== '' ">Editar</button>
+                </li>
             </ul>
 
 

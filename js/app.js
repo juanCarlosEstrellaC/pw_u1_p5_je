@@ -5,7 +5,7 @@ const estudiantes = [{ nombre: 'Edison', apellido: 'Cayambe' },
 { nombre: 'Daniel', apellido: 'Oviedo' },
 { nombre: 'Karla', apellido: 'Perez' },
 { nombre: 'Julio', apellido: 'Castillo' },
-{ nombre: 'Andrea', apellido: 'Teran' },
+{ nombre: '', apellido: 'Teran' },
 ]
 
 console.log(estudiantes);
@@ -41,9 +41,13 @@ const app = Vue.createApp({
             // Push: agrega al final de la lista
             this.lista.push(estu)
         },
-        presionandoTecla(event){ // event es un argumento por defecto, no es necesario ponerlo
+        presionandoTecla({charCode}){ // event es un argumento por defecto, no es necesario ponerlo
             console.log("presionando...");
-            console.log(event.charCode);
+            console.log(charCode);
+        },
+        agregarEstudianteMod(){ // event es un argumento por defecto, no es necesario ponerlo
+            console.log(nombre);
+            console.log("presionando 2...");
         },
         metodoApellido(event){
             console.log(event.charCode);
@@ -62,8 +66,8 @@ const app = Vue.createApp({
             mensaje: 'Hola mundo, desde Vue.js',
             valor: 100,
             lista: estudiantes,
-            nombre: null,
-            apellido: null
+            nombre: undefined,
+            apellido: undefined
         }
     }
 
