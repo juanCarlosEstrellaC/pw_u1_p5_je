@@ -11,7 +11,8 @@ body{
 }
 
 .form{
-    width: 340px;
+    width: 440px;
+    margin-left: 15%;
     height: auto ;
     background: #e6e6e6;
     border-radius: 8px;
@@ -23,7 +24,7 @@ body{
 h2{
     margin: 10px 0px;
     padding: 10px;
-    width: 180px;
+    width: 380px;
     color: #787880;
     border-bottom: 3px solid #787880;
 }
