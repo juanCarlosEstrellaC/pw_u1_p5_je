@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi formulario Estudiante</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/miEstudianteFormulario.css">
+    
+    <!-- Importo el CDN con el link -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="formEstudiante" id="myApplicacion">
+            <header>
+                <h1>Mis Estudiantes</h1>
+            </header>
+            
+            <section>
+                <div class="form">
+                    <h2>Nuevo Estudiante</h2>
+                    <p type="Nombre:"><input type="text" v-model="nombre"></p>
+                    <p type="Apellido:"><input type="text" v-model="apellido"></p>
+                    <p type="Hobby:"><input type="text" v-model="hobby"></p>
+                    <p type="Genero:"><input type="text" v-model="genero"></p>
+                    <p type="Pais:"><input type="text" v-model="pais"></p>
+
+                    <div class="miniContainer">
+                        <button @click="agregarEstudiante()">Agregar</button>
+                    </div>
+                </div>
+            </section>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Hobby</th>
+                        <th scope="col">Género</th>
+                        <th scope="col">País</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="({nombre, apellido, hobby, genero, pais}, index) in lista">
+                        <th scope="row">{{index + 1}}</th>
+                        <td>{{nombre}}</td>
+                        <td>{{apellido}}</td>
+                        <td>{{hobby}}</td>
+                        <td>{{genero}}</td>
+                        <td>{{pais}}</td>
+                        <td>
+                            <button class="btn btn-primary">Editar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <script src="../js/appFormulario.js"></script>
+
+    </div>
+</body>
+
+</html>
